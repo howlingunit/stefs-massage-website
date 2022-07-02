@@ -1,0 +1,24 @@
+{
+  "name": "stefs-massage-website",
+  "version": "1.0.0",
+  "description": "the website for stefs massage services",
+  "main": "svr.js",
+  "type": "module",
+  "scripts": {
+    "test": "node svr.js",
+    "start": "node svr.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/howlingunit/stefs-massage-website.git"
+  },
+  "author": "Tyler Pitt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/howlingunit/stefs-massage-website/issues"
+  },
+  "homepage": "https://github.com/howlingunit/stefs-massage-website#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
