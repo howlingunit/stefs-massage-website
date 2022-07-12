@@ -19,8 +19,77 @@ body{
   background-color: #1e2a39;
 }
 
+::-webkit-scrollbar {
+  display: none; 
+}
+
+:root {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  --dimmer-justify-content: start;
+
+  --hero-width: 40%;
+  --hero-right: 17%;
+  --hero-text-font-size: 3.5rem;
+  --hero-text-align: start;
+  --hero-text-line-height: 4.5rem;
+  --hero-text-margin-bottom: 8%;
+  --hero-margin: 10% 0 0 0;
+  --hero-align-items: flex-start;
+
+  --nav-title-font-size: 5rem;
+  --nav-title-margin: 0 0 0 0;
+  --nav-align-items: baseline;
+  --nav-items-font-size: 2.5rem;
+  --nav-flex-direction: row;
+  --nav-width: 75%;
+  --nav-text-align: start;
+  --nav-padding: 2.5rem 0 0 0;
+
+  --CTAbutt-width: 20rem;
+  --CTAbutt-height: 5rem;
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --hero-width: 80%;
+    --hero-right: 0%
+
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --dimmer-justify-content: space-between;
+
+    --hero-width: 80%;
+    --hero-right: 0%;
+    --hero-text-font-size: 2.5rem;
+    --hero-text-line-height: 3.2rem;
+    --hero-text-align: center;
+    --hero-text-margin-bottom: 10%;
+    --hero-align-items: center;
+    --hero-margin: 0 0 20% 0;
+
+
+
+    --nav-title-font-size: 3.5rem;
+    --nav-title-margin: 3rem 0 0 0;
+    --nav-align-items: right;
+    --nav-items-font-size: 1.5rem;
+    --nav-flex-direction: column-reverse;
+    --nav-width: 100%;
+    --nav-text-align: center;
+    --nav-padding: 1rem 0 0 0;
+
+    --CTAbutt-width: 18rem;
+    --CTAbutt-height: 4.5rem;  
+  }
+}
+
 .landing-page {
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
 
   background-image: url('./assets/pexels-james-wheeler-414612.jpg');
@@ -37,60 +106,65 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: var(--dimmer-justify-content);
 }
 
 nav {
-  width: 75%;
-  padding: 2rem 0 0 0;
+  width: var(--nav-width);
+  padding: var(--nav-padding);
 
   display: flex;
-  flex-direction: row;
+  flex-direction: var(--nav-flex-direction);
   justify-content: space-between;
-  align-items: baseline;
+  align-items: var(--nav-align-items);
+  text-align: var(--nav-text-align);
 }
 
 nav>h1 {
   font-family: 'Sacramento', cursive;
   font-style: normal;
   font-weight: 400;
-  font-size: 5rem;
-  line-height: 92px;
+  font-size: var(--nav-title-font-size);
+  margin: var(--nav-title-margin);
 }
 
 .nav-items {
   list-style: none;
-}
+  font-size: var(--nav-items-font-size);
 
-.nav-items>a{
-  font-size: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 3rem;
 }
 
 .hero {
-  width: 30%;
+  width: var(--hero-width);
 
-  right: 22%;
+  right: var(--hero-right);
   
-  margin: 10% 0 0 0;
+  margin: var(--hero-margin);
   
   /* background-color: #0085a3; */
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: var(--hero-align-items);
+  text-align: var(--hero-text-align);
 }
 .hero>h2 {
-  line-height: 4.5rem;
+  line-height: var(--hero-text-line-height);
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: var(--hero-text-font-size);
 
-  margin-bottom: 1rem;
+  margin-bottom: var(--hero-text-margin-bottom);
 }
 
 .CTAbutt {
   cursor: pointer;
-  width: 20rem;
-  height: 5rem;
+  width: var(--CTAbutt-width);
+  height: var(--CTAbutt-height);
 
   background-color: #02B6DD;
   border: 0;
