@@ -29,15 +29,6 @@ body{
 
   --dimmer-justify-content: start;
 
-  --hero-width: 40%;
-  --hero-right: 17%;
-  --hero-text-font-size: 3.5rem;
-  --hero-text-align: start;
-  --hero-text-line-height: 4.5rem;
-  --hero-text-margin-bottom: 8%;
-  --hero-margin: 10% 0 0 0;
-  --hero-align-items: flex-start;
-
   --nav-title-font-size: 5rem;
   --nav-title-margin: 0 0 0 0;
   --nav-align-items: baseline;
@@ -47,8 +38,23 @@ body{
   --nav-text-align: start;
   --nav-padding: 2.5rem 0 0 0;
 
+  --article-flex-direction: row;
+
+  --hero-width: 40%;
+  --hero-right: 17%;
+  --hero-text-font-size: 3.5rem;
+  --hero-text-align: start;
+  --hero-text-line-height: 4.5rem;
+  --hero-text-margin-bottom: 8%;
+  --hero-margin: 10% 0 0 0;
+  --hero-align-items: flex-start;
+
   --CTAbutt-width: 20rem;
   --CTAbutt-height: 5rem;
+
+  --about-me-img-border-radius: 0 3rem 3rem 0;
+  --about-me-img-height: 100%;
+  --about-me-img-width: 80%;
 }
 
 @media (max-width: 1000px) {
@@ -63,17 +69,6 @@ body{
   :root {
     --dimmer-justify-content: space-between;
 
-    --hero-width: 80%;
-    --hero-right: 0%;
-    --hero-text-font-size: 2.5rem;
-    --hero-text-line-height: 3.2rem;
-    --hero-text-align: center;
-    --hero-text-margin-bottom: 10%;
-    --hero-align-items: center;
-    --hero-margin: 0 0 20% 0;
-
-
-
     --nav-title-font-size: 3.5rem;
     --nav-title-margin: 3rem 0 0 0;
     --nav-align-items: right;
@@ -83,15 +78,35 @@ body{
     --nav-text-align: center;
     --nav-padding: 1rem 0 0 0;
 
+  --article-flex-direction: column;
+
+    --hero-width: 80%;
+    --hero-right: 0%;
+    --hero-text-font-size: 2.5rem;
+    --hero-text-line-height: 3.2rem;
+    --hero-text-align: center;
+    --hero-text-margin-bottom: 10%;
+    --hero-align-items: center;
+    --hero-margin: 0 0 20% 0;
+
     --CTAbutt-width: 18rem;
     --CTAbutt-height: 4.5rem;  
+
+    --about-me-img-border-radius: 0 0 3rem 3rem;
+    --about-me-img-height: 80%;
+    --about-me-img-width: 100%;
+  
+
   }
 }
 
-.landing-page {
-  height: 95vh;
-  width: 100vw;
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-style: normal;
+  font-weight: 400;
+}
 
+.landing-page {
   background-image: url('./assets/pexels-james-wheeler-414612.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -109,6 +124,16 @@ body{
   justify-content: var(--dimmer-justify-content);
 }
 
+article {
+  height: 95vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: var(--article-flex-direction);
+  align-items: center;
+  justify-content: var(--dimmer-justify-content);
+}
+
 nav {
   width: var(--nav-width);
   padding: var(--nav-padding);
@@ -121,9 +146,6 @@ nav {
 }
 
 nav>h1 {
-  font-family: 'Sacramento', cursive;
-  font-style: normal;
-  font-weight: 400;
   font-size: var(--nav-title-font-size);
   margin: var(--nav-title-margin);
 }
@@ -200,4 +222,16 @@ nav>h1 {
 }
 .CTAbutt:hover > svg{
   transform: translate(1rem);
+}
+
+.about-me-img {
+  height: var(--about-me-img-height);
+  width: var(--about-me-img-width);
+  border-radius: var(--about-me-img-border-radius);
+
+  background-image: url('./assets/stef.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
