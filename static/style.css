@@ -55,12 +55,22 @@ body{
   --about-me-img-border-radius: 0 3rem 3rem 0;
   --about-me-img-height: 100%;
   --about-me-img-width: 80%;
+  --about-me-text-padding: 0 5rem 0 8rem;
+  --about-me-text-text-align: start;
+  --about-me-text-margin-bottom: 20rem;
+  --about-me-text-h1-font-size: 6rem;
+  --about-me-text-h1-margin-bottom: 1rem;
+  --about-me-text-p-font-size: 2.5rem;
+
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   :root {
     --hero-width: 80%;
     --hero-right: 0%
+
+    --about-me-text-margin-bottom: 1rem;
+
 
   }
 }
@@ -95,6 +105,13 @@ body{
     --about-me-img-border-radius: 0 0 3rem 3rem;
     --about-me-img-height: 80%;
     --about-me-img-width: 100%;
+    --about-me-text-padding: 1rem 0.5rem 0 0.5rem;
+    --about-me-text-text-align: center;
+  --about-me-text-margin-bottom: 2rem;
+  --about-me-text-h1-font-size: 4rem;
+    --about-me-text-h1-margin-bottom: 0.5rem;
+    --about-me-text-p-font-size: 1.5rem;
+
   
 
   }
@@ -234,4 +251,25 @@ nav>h1 {
   background-repeat: no-repeat;
   background-size: cover;
 
+}
+.about-me {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.about-me-text {
+  width: 100%;
+
+  text-align: var(--about-me-text-text-align);
+  padding: var(--about-me-text-padding);
+  margin-bottom: var(--about-me-text-margin-bottom);
+
+}
+.about-me-text>h1 {
+  font-size: var(--about-me-text-h1-font-size);
+  text-decoration: underline 0.2rem;
+  margin-bottom: var(--about-me-text-h1-margin-bottom);
+}
+.about-me-text>p {
+  font-size: var(--about-me-text-p-font-size);
 }
