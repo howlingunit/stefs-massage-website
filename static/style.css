@@ -57,12 +57,16 @@ body{
   --about-me-img-width: 80%;
   --about-me-text-padding: 0 5rem 0 8rem;
   --about-me-text-text-align: start;
-  --about-me-text-margin-bottom: 10%;
+  --about-me-text-margin-bottom: 20rem;
   /* --about-me-text-margin-bottom: 20rem; */
   --about-me-text-h1-font-size: 6rem;
   --about-me-text-h1-margin-bottom: 1rem;
   --about-me-text-p-font-size: 2.5rem;
 
+  --testimonial-width: 30%;
+  --testimonials-gap: auto;
+  --testimonial-text-p-font-size: 2.5rem;
+  --testimonial-text-h1-font-size: 3.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -81,7 +85,7 @@ body{
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   :root {
     --dimmer-justify-content: space-between;
 
@@ -113,11 +117,15 @@ body{
     --about-me-img-width: 100%;
     --about-me-text-padding: 1rem 0.5rem 0 0.5rem;
     --about-me-text-text-align: center;
-  --about-me-text-margin-bottom: 2rem;
-  --about-me-text-h1-font-size: 4rem;
+    --about-me-text-margin-bottom: 2rem;
+    --about-me-text-h1-font-size: 4rem;
     --about-me-text-h1-margin-bottom: 0.5rem;
     --about-me-text-p-font-size: 1.5rem;
 
+    --testimonial-width: 90%;
+    --testimonials-gap: 7rem;
+    --testimonial-text-p-font-size: 1.5rem;
+    --testimonial-text-h1-font-size: 3rem;
   
 
   }
@@ -278,4 +286,69 @@ nav>h1 {
 }
 .about-me-text>p {
   font-size: var(--about-me-text-p-font-size);
+}
+
+.testimonials {
+  background-color: #6297BF;
+
+  justify-content: space-evenly;
+
+  height: auto;
+
+  padding: 13rem 0 10rem 0;
+
+  gap: var(--testimonials-gap);
+  /* max-height: 70vh; */
+}
+
+.testimonial {
+  border: 3px solid white;
+  border-radius: 2.5rem;
+  width: var(--testimonial-width);
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: var(--testimonial-margin-bottom);
+  padding: 0 2.5rem 2rem 2.5rem;
+}
+
+.profile-pic{
+  background-color: #6297BF;
+  border-radius: 100rem;
+
+  height: 9rem;
+  width: 9rem;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  
+  top: -4.5rem;
+}
+.profile-pic>div {
+  border-radius: 100rem;
+  height: 80%;
+  width: 80%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonial-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  top: -3rem;
+}
+.testimonial-text>h1 {
+  font-size: var(--testimonial-text-h1-font-size);
+}
+.testimonial-text>p {
+  font-size: var(--testimonial-text-p-font-size);
 }
