@@ -67,6 +67,10 @@ body{
   --testimonials-gap: auto;
   --testimonial-text-p-font-size: 2.5rem;
   --testimonial-text-h1-font-size: 3.5rem;
+
+  --tip-pic-width: 50%;
+  --tip-pic-height: 70%;
+  --tip-pic-border-radius: 3rem 0 0 3rem;
 }
 
 @media (max-width: 1200px) {
@@ -351,4 +355,35 @@ nav>h1 {
 }
 .testimonial-text>p {
   font-size: var(--testimonial-text-p-font-size);
+}
+
+.tip {
+  background-color: #030712;
+}
+
+.tip {
+  min-height: 50vh;
+  justify-content: space-between;
+}
+
+.tip-pic {
+  height: var(--tip-pic-height);
+  width: var(--tip-pic-width);
+  border-radius: var(--tip-pic-border-radius);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 4;
+}
+
+.tip-text {
+  padding: 0 20rem 0 15rem;
+  flex-shrink: 3;
+}
+.tip-text>h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+.tip-text>p {
+  font-size: 1.6rem;
 }
