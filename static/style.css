@@ -1,5 +1,6 @@
 /* fonts: */
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 /* blank slate */
@@ -7,7 +8,7 @@
   box-sizing: border-box;
   font-size: 100%;
   font-weight: normal;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -68,9 +69,16 @@ body{
   --testimonial-text-p-font-size: 2.5rem;
   --testimonial-text-h1-font-size: 3.5rem;
 
-  --tip-pic-width: 50%;
-  --tip-pic-height: 70%;
+  --tip-padding: 7rem 0 7rem 0;
+  --tip-gap: 5rem;
+  --tip-pic-width: 55%;
+  --tip-pic-height: 100%;
   --tip-pic-border-radius: 3rem 0 0 3rem;
+  --tip-text-padding: 0 0 0 5rem;
+  --tip-text-h1-font-size: 5rem;
+  --tip-text-p-font-size: 2rem;
+  --tip-text-align-items: flex-start;
+  --tip-text-text-align: start;
 }
 
 @media (max-width: 1200px) {
@@ -131,7 +139,18 @@ body{
     --testimonial-text-p-font-size: 1.5rem;
     --testimonial-text-h1-font-size: 3rem;
   
+    --tip-padding: 0;
+    --tip-gap: 2rem;
+    --tip-pic-width: 100%;
+    --tip-pic-height: 100%;
+    --tip-pic-border-radius: 3rem 3rem 0 0; 
+    --tip-text-padding: 0 0.5rem 0 0.5rem;
+    --tip-text-h1-font-size: 4rem;
+    --tip-text-p-font-size: 1.5rem;
+    --tip-text-align-items: center;
+    --tip-text-text-align: center;
 
+  
   }
 }
 
@@ -362,8 +381,11 @@ nav>h1 {
 }
 
 .tip {
-  min-height: 50vh;
+  min-height: 60vh;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--tip-gap);
+  padding: var(--tip-padding);
 }
 
 .tip-pic {
@@ -374,16 +396,34 @@ nav>h1 {
   background-repeat: no-repeat;
   background-size: cover;
   flex-grow: 4;
+  background-color: #0085a3;
 }
 
 .tip-text {
-  padding: 0 20rem 0 15rem;
-  flex-shrink: 3;
+  padding: var(--tip-text-padding);
+  flex-shrink: 2;
+  margin-top: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: var(--tip-text-align-items);
+  flex-direction: column;
+
+  text-align: var(--tip-text-text-align);
+
 }
 .tip-text>h1 {
-  font-size: 4rem;
+  font-size: var(--tip-text-h1-font-size);
   margin-bottom: 0.5rem;
 }
 .tip-text>p {
-  font-size: 1.6rem;
+  font-size: var(--tip-text-p-font-size);
+}
+
+.tip-topic {
+  background-color: #DE9C39;
+  width: fit-content;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
 }
