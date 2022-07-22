@@ -116,10 +116,10 @@ body{
 
 @media (max-width: 800px) {
   :root {
-    --dimmer-justify-content: space-evenly;
+    --dimmer-justify-content: space-between;
 
     --nav-title-font-size: 4rem;
-    --nav-title-margin: 2rem 0 0 0;
+    --nav-title-margin: 1rem 0 0 0;
     --nav-align-items: right;
     --nav-items-font-size: 1.5rem;
     --nav-flex-direction: column-reverse;
@@ -235,8 +235,8 @@ nav>h1 {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 3rem;
+  justify-content: space-evenly;
+  gap: 2rem;
 }
 
 .hero {
