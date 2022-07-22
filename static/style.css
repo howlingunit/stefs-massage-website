@@ -85,6 +85,10 @@ body{
 
   --banner-h2-font-size: 6rem;
   --banner-h2-margin-bottom: 0;
+
+  --credit-position: absolute;
+  --credit-bottom: 1rem;
+  --credit-right: 2rem;
 }
 
 @media (max-width: 1200px) {
@@ -97,6 +101,10 @@ body{
     --about-me-text-h1-font-size: 450%;
     --about-me-text-p-font-size: 180%;
     --about-me-text-padding: 0 0rem 0 8rem;
+
+    --tip-height: auto;
+    --tip-pic-height: 40rem;
+
 
   
 
@@ -146,7 +154,6 @@ body{
     --testimonial-text-p-font-size: 1.5rem;
     --testimonial-text-h1-font-size: 3rem;
   
-    --tip-height: auto;
     --tip-padding: 0;
     --tip-gap: 2rem;
     --tip-pic-width: 100%;
@@ -162,7 +169,10 @@ body{
     --banner-h2-font-size: 4rem;
     --banner-h2-margin-bottom: 2rem;
 
-  
+    --credit-position: relative;
+    --credit-bottom: 0;
+    --credit-right: 0;
+
   }
 }
 
@@ -453,6 +463,50 @@ nav>h1 {
 }
 .banner>h2 {
   font-size: var(--banner-h2-font-size);
-  line-height: 3.5rem;
+  line-height: 100%;
   margin-bottom: var(--banner-h2-margin-bottom);
+}
+
+footer {
+  background-color: #616161;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+
+  padding: 2rem 0.5rem 1rem 0.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+
+}
+
+.site-map {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.site-map>li>a {
+  text-decoration: underline;
+}
+
+.footer-contact>a {
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20%;
+}
+
+.credit {
+  position: var(--credit-position);
+
+  bottom: var(--credit-bottom);
+  right: var(--credit-right);
+}
+.credit>a {
+  text-decoration: underline;
 }
