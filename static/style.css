@@ -94,7 +94,7 @@ body{
 @media (max-width: 1200px) {
   :root {
     --hero-width: 80%;
-    --hero-right: 0%
+    --hero-right: 0%;
 
     --about-me-text-margin-bottom: 0rem;
 
