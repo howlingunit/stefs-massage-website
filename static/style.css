@@ -53,6 +53,7 @@ body{
   --CTAbutt-width: 20rem;
   --CTAbutt-height: 5rem;
 
+  --about-me-height: 100vh;
   --about-me-img-border-radius: 0 3rem 3rem 0;
   --about-me-img-height: 100%;
   --about-me-img-width: 80%;
@@ -69,16 +70,21 @@ body{
   --testimonial-text-p-font-size: 2.5rem;
   --testimonial-text-h1-font-size: 3.5rem;
 
+  --tip-height: 70vh;
   --tip-padding: 7rem 0 7rem 0;
   --tip-gap: 5rem;
   --tip-pic-width: 55%;
   --tip-pic-height: 100%;
   --tip-pic-border-radius: 3rem 0 0 3rem;
+  --tip-pic-top: 0;
   --tip-text-padding: 0 0 0 5rem;
   --tip-text-h1-font-size: 5rem;
   --tip-text-p-font-size: 2rem;
   --tip-text-align-items: flex-start;
   --tip-text-text-align: start;
+
+  --banner-h2-font-size: 6rem;
+  --banner-h2-margin-bottom: 0;
 }
 
 @media (max-width: 1200px) {
@@ -124,6 +130,7 @@ body{
     --CTAbutt-width: 18rem;
     --CTAbutt-height: 4.5rem;  
 
+    --about-me-height: auto;
     --about-me-img-border-radius: 0 0 3rem 3rem;
     --about-me-img-height: 20rem;
     --about-me-img-width: 100%;
@@ -139,16 +146,21 @@ body{
     --testimonial-text-p-font-size: 1.5rem;
     --testimonial-text-h1-font-size: 3rem;
   
+    --tip-height: auto;
     --tip-padding: 0;
     --tip-gap: 2rem;
     --tip-pic-width: 100%;
     --tip-pic-height: 20rem;
-    --tip-pic-border-radius: 3rem 3rem 0 0; 
+    --tip-pic-border-radius: 3rem 3rem 3rem 3rem; 
+    --tip-pic-top: 3rem;
     --tip-text-padding: 0 0.5rem 0 0.5rem;
     --tip-text-h1-font-size: 4rem;
     --tip-text-p-font-size: 1.5rem;
     --tip-text-align-items: center;
     --tip-text-text-align: center;
+
+    --banner-h2-font-size: 4rem;
+    --banner-h2-margin-bottom: 2rem;
 
   
   }
@@ -176,7 +188,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: var(--dimmer-justify-content);
-  gap: ;
 }
 
 article {
@@ -293,7 +304,7 @@ nav>h1 {
 }
 .about-me {
   overflow: hidden;
-  height: auto;
+  height: var(--about-me-height);
 }
 
 .about-me-text {
@@ -384,7 +395,7 @@ nav>h1 {
 }
 
 .tip {
-  height: auto;
+  height: var(--tip-height);
   justify-content: space-between;
   align-items: flex-start;
   gap: var(--tip-gap);
@@ -400,6 +411,7 @@ nav>h1 {
   background-size: cover;
   flex-grow: 4;
   background-color: #0085a3;
+  top: var(--tip-pic-top);
 }
 
 .tip-text {
@@ -429,4 +441,18 @@ nav>h1 {
   padding: 0 0.5rem 0 0.5rem;
   border-radius: 3rem;
   margin-bottom: 1rem;
+}
+
+.banner {
+  height: auto;
+  padding: 4rem 0rem 4rem 0;
+
+  justify-content: space-around;
+  text-align: center;
+
+}
+.banner>h2 {
+  font-size: var(--banner-h2-font-size);
+  line-height: 3.5rem;
+  margin-bottom: var(--banner-h2-margin-bottom);
 }
