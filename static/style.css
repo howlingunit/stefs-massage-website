@@ -18,6 +18,9 @@
 
 body{
   background-color: #1e2a39;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ::-webkit-scrollbar {
@@ -113,7 +116,7 @@ body{
 
 @media (max-width: 800px) {
   :root {
-    --dimmer-justify-content: space-between;
+    --dimmer-justify-content: space-evenly;
 
     --nav-title-font-size: 4rem;
     --nav-title-margin: 2rem 0 0 0;
@@ -474,6 +477,7 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 1rem;
+  width: 100vw;
 
   padding: 2rem 0.5rem 1rem 0.5rem;
   font-size: 1.4rem;
