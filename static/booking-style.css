@@ -1,4 +1,7 @@
 :root {
+  --price-list-gap: auto;
+  --service-width: 25%;
+  --service-padding: 0 2.5rem 0rem 2.5rem;
 
 }
 @media (max-width: 1200px) {
@@ -8,11 +11,84 @@
 }
 @media (max-width: 800px) {
   :root {
-
+    --price-list-gap: 5rem;
+    --service-width: 90%;
+    --service-padding: 0;
   }
 }
 
 
 .price-list {
   background-color: #161F29;
+
+  justify-content: space-evenly;
+
+  height: auto;
+
+  margin-top: 1.5rem;
+
+  padding: 6rem 0 8rem 0;
+
+  gap: var(--price-list-gap);
+}
+
+.service {
+  width: var(--service-width);
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  text-align: center;
+
+  padding: var(--service-padding);
+
+  gap: 1.5rem;
+  
+
+}
+
+.service-pic {
+  border-radius: 100rem;
+
+  height: 7rem;
+  width: 7rem;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.service-info > h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-info > p {
+  font-size: 1.4rem;
+}
+
+.service-cost > p {
+  font-size: 2rem;
+}
+
+.booking-info {
+  background-color: #6197BF;
+
+  height: 70vh;
+}
+
+.booking-info > iframe {
+  height: 80%;
+  width: 40%;
+
+  border-radius: 0 4rem 4rem 0;
 }
