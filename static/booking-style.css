@@ -3,10 +3,29 @@
   --service-width: 25%;
   --service-padding: 0 2.5rem 0rem 2.5rem;
 
+  --booking-info-height: 70vh;
+  --booking-info-flex-direction: row;
+  --booking-info-gap: 5%;
+  --booking-info-padding-top: 0;
+  --booking-info-text-flex-direction: row;
+  --booking-info-text-gap: 10rem;
+  --booking-info-text-h1-font-size: 5rem;
+  --info-text-group-h2-font-size: 2rem;
+  --info-text-group-p-font-size: 1.6rem;
+  --booking-info-text-height: 80%;
+  --booking-info-iframe-height: 80%;
+  --booking-info-iframe-width: 40%;
+  --booking-info-iframe-border-radius: 0 4rem 4rem 0;
 }
 @media (max-width: 1200px) {
   :root {
-
+    --booking-info-text-flex-direction: column;
+    --booking-info-text-gap: 1rem;
+    --booking-info-text-h1-font-size: 5rem;
+    --info-text-group-h2-font-size: 1.5rem;
+    --info-text-group-p-font-size: 1rem;
+    --booking-info-iframe-height: 100%;
+    --booking-info-text-height: 100%;
   }
 }
 @media (max-width: 800px) {
@@ -14,6 +33,18 @@
     --price-list-gap: 5rem;
     --service-width: 90%;
     --service-padding: 0;
+
+    --booking-info-height: auto;
+    --booking-info-flex-direction: column-reverse;
+    --booking-info-gap: 3rem;
+    --booking-info-padding-top: 3rem;
+    --booking-info-iframe-height: 30rem;
+    --booking-info-iframe-width: 100%;
+    --booking-info-iframe-border-radius:  4rem 4rem 0 0;
+    --booking-info-text-h1-font-size: 4rem;
+
+
+
   }
 }
 
@@ -83,12 +114,37 @@
 .booking-info {
   background-color: #6197BF;
 
-  height: 70vh;
+  height: var(--booking-info-height);
+
+  gap: var(--booking-info-gap);
+  padding-top: var(--booking-info-padding-top);
+
+  flex-direction: var(--booking-info-flex-direction);
 }
 
 .booking-info > iframe {
-  height: 80%;
-  width: 40%;
+  height: var(--booking-info-iframe-height);
+  width: var(--booking-info-iframe-width);
 
-  border-radius: 0 4rem 4rem 0;
+  border-radius: var(--booking-info-iframe-border-radius);
+}
+
+.booking-info-text {
+ height: var(--booking-info-text-height);
+ text-align: center;
+
+ display: flex;
+ gap: var(--booking-info-text-gap);
+ flex-direction: var(--booking-info-text-flex-direction);
+}
+.booking-info-text > div > h1{
+  font-size: var(--booking-info-text-h1-font-size);
+}
+
+.info-text-group > h2{
+  font-size: var(--info-text-group-h2-font-size);
+}
+.info-text-group > p{
+  margin-bottom: 1rem;
+  font-size: var(--info-text-group-p-font-size);
 }
