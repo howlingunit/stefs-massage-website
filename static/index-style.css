@@ -22,10 +22,11 @@
   --about-me-text-h1-margin-bottom: 1rem;
   --about-me-text-p-font-size: 2.5rem;
 
-  --testimonial-width: 30%;
+  --testimonial-width: 45%;
   --testimonials-gap: auto;
-  --testimonial-text-p-font-size: 2.5rem;
+  --testimonial-text-p-font-size: 1.5rem;
   --testimonial-text-h1-font-size: 3.5rem;
+  --testimonials-align-items: stretch;
 
   --tip-height: 70vh;
   --tip-padding: 7rem 0 7rem 0;
@@ -85,8 +86,10 @@
 
     --testimonial-width: 90%;
     --testimonials-gap: 7rem;
-    --testimonial-text-p-font-size: 1.5rem;
+    --testimonial-text-p-font-size: 1.2rem;
     --testimonial-text-h1-font-size: 3rem;
+    --testimonials-align-items: center;
+
   
     --tip-padding: 0;
     --tip-gap: 2rem;
@@ -183,8 +186,10 @@
 
   height: auto;
 
+  align-items: var(--testimonials-align-items);
 
-  padding: 13rem 0 10rem 0;
+
+  padding: 8rem 0 5rem 0;
 
   gap: var(--testimonials-gap);
 }
