@@ -77,12 +77,12 @@
     --about-me-img-border-radius: 0 0 3rem 3rem;
     --about-me-img-height: 20rem;
     --about-me-img-width: 100%;
-    --about-me-text-padding: 1rem 0.5rem 0 0.5rem;
+    --about-me-text-padding: 1rem 2rem 0 2rem;
     --about-me-text-text-align: center;
     --about-me-text-margin-bottom: 2rem;
     --about-me-text-h1-font-size: 4rem;
     --about-me-text-h1-margin-bottom: 0.5rem;
-    --about-me-text-p-font-size: 1.5rem;
+    --about-me-text-p-font-size: 1.2rem;
 
     --testimonial-width: 90%;
     --testimonials-gap: 7rem;
@@ -204,6 +204,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   padding: 0 2.5rem 2rem 2.5rem;
 }
