@@ -28,11 +28,11 @@
   --testimonial-text-h1-font-size: 3.5rem;
   --testimonials-align-items: stretch;
 
-  --tip-height: 70vh;
+  --tip-height: auto;
   --tip-padding: 7rem 0 7rem 0;
   --tip-gap: 5rem;
-  --tip-pic-width: 55%;
-  --tip-pic-height: 100%;
+  --tip-pic-width: 60%;
+  --tip-pic-height: 30rem;
   --tip-pic-border-radius: 3rem 0 0 3rem;
   --tip-pic-top: 0;
   --tip-text-padding: 0 0 0 5rem;
@@ -256,7 +256,7 @@
 .tip {
   height: var(--tip-height);
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--tip-gap);
   padding: var(--tip-padding);
 }
@@ -292,6 +292,7 @@
 }
 .tip-text>p {
   font-size: var(--tip-text-p-font-size);
+  margin-bottom: 1rem;
 }
 
 .tip-topic {
