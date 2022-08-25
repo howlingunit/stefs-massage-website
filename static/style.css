@@ -1,6 +1,7 @@
 /* fonts: */
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 
 /* blank slate */
@@ -96,6 +97,9 @@ h1 {
   font-weight: 400;
 }
 
+h2 {
+  font-family: 'Comfortaa', cursive;
+}
 
 article {
   height: 95vh;
