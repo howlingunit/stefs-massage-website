@@ -18,7 +18,7 @@
   --about-me-text-text-align: start;
   --about-me-text-margin: 1rem 0 1rem 0;
   /* --about-me-text-margin-bottom: 20rem; */
-  --about-me-text-h1-font-size: 6rem;
+  --about-me-text-h1-font-size: 4rem;
   --about-me-text-h1-margin-bottom: 1rem;
   --about-me-text-p-font-size: 2rem;
 
@@ -36,7 +36,7 @@
   --tip-pic-border-radius: 3rem 0 0 3rem;
   --tip-pic-top: 0;
   --tip-text-padding: 0 0 0 5rem;
-  --tip-text-h1-font-size: 5rem;
+  --tip-text-h1-font-size: 4rem;
   --tip-text-p-font-size: 2rem;
   --tip-text-align-items: flex-start;
   --tip-text-text-align: start;
@@ -80,14 +80,14 @@
     --about-me-text-padding: 1rem 2rem 0 2rem;
     --about-me-text-text-align: center;
     --about-me-text-margin-bottom: 2rem;
-    --about-me-text-h1-font-size: 4rem;
+    --about-me-text-h1-font-size: 3rem;
     --about-me-text-h1-margin-bottom: 0.5rem;
-    --about-me-text-p-font-size: 1.2rem;
+    --about-me-text-p-font-size: 1.5rem;
 
     --testimonial-width: 90%;
     --testimonials-gap: 7rem;
-    --testimonial-text-p-font-size: 1.2rem;
-    --testimonial-text-h1-font-size: 3rem;
+    --testimonial-text-p-font-size: 1.5rem;
+    --testimonial-text-h1-font-size: 3.5rem;
     --testimonials-align-items: center;
 
   
@@ -98,7 +98,7 @@
     --tip-pic-border-radius: 3rem 3rem 3rem 3rem; 
     --tip-pic-top: 3rem;
     --tip-text-padding: 0 0.5rem 0 0.5rem;
-    --tip-text-h1-font-size: 4rem;
+    --tip-text-h1-font-size: 3rem;
     --tip-text-p-font-size: 1.5rem;
     --tip-text-align-items: center;
     --tip-text-text-align: center;
@@ -137,7 +137,7 @@
   align-items: var(--hero-align-items);
   text-align: var(--hero-text-align);
 }
-.hero>h2 {
+.hero>h3 {
   line-height: var(--hero-text-line-height);
   font-weight: 500;
   font-size: var(--hero-text-font-size);
@@ -168,9 +168,8 @@
   margin: var(--about-me-text-margin);
 
 }
-.about-me-text>h1 {
+.about-me-text>h2 {
   font-size: var(--about-me-text-h1-font-size);
-  text-decoration: underline 0.2rem;
   margin-bottom: var(--about-me-text-h1-margin-bottom);
 }
 .about-me-text>p {
@@ -286,7 +285,7 @@
   text-align: var(--tip-text-text-align);
 
 }
-.tip-text>h1 {
+.tip-text>h2 {
   font-size: var(--tip-text-h1-font-size);
   margin-bottom: 0.5rem;
 }
@@ -296,7 +295,7 @@
 }
 
 .tip-topic {
-  background-color: #DE9C39;
+  background-color: #006e33;
   width: fit-content;
   padding: 0 0.5rem 0 0.5rem;
   border-radius: 3rem;
