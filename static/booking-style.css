@@ -22,7 +22,7 @@
   :root {
     --booking-info-text-flex-direction: column;
     --booking-info-text-gap: 1rem;
-    --booking-info-text-h1-font-size: 3rem;
+    --booking-info-text-h1-font-size: 2.5rem;
     --info-text-group-h2-font-size: 1.5rem;
     --info-text-group-p-font-size: 1rem;
     --booking-info-iframe-height: 100%;
@@ -43,7 +43,7 @@
     --booking-info-iframe-height: 30rem;
     --booking-info-iframe-width: 100%;
     --booking-info-iframe-border-radius:  4rem 4rem 0 0;
-    --booking-info-text-h1-font-size: 3rem;
+    --booking-info-text-h1-font-size: 2.5rem;
 
 
 
@@ -105,7 +105,7 @@
 
 }
 .service-info > h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   /* margin-bottom: 1rem; */
 }
 .service-info > p {
