@@ -4,84 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="index-style.css">
   <link rel="shortcut icon" type="image/ico" href="./assets/logo/favicon.ico"/>
-  <title>Stefs Massage - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="locations-style.css">
+  <title>Stefs Massage - Locations</title>
 </head>
 <body>
+  <nav>
+    <h1>Locations</h1>
+    
+    <ul class="nav-items">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./locations.html">Locations</a></li>
+      <li><a href="./booking.html">Booking</a></li>
+    </ul>
+  </nav>
 
-  <article class="landing-page">
-    <section class="dimmer">
-      <nav>
-        <h1>Stefs Massage Services</h1>
-        
-        <ul class="nav-items">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./locations.html">Locations</a></li>
-          <li><a href="./booking.html">Booking</a></li>
-        </ul>
-      </nav>
 
-      <div class="hero">
-        <h3>I'm Stef, and I'm here to help you relax and de-stress.</h3>
-        <!-- <h3>To stop being in back pain come here friend!</h3> -->
-        <a href="./booking.html"><button class="CTAbutt">
-          <p>Book Today</p>
-          <svg fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.6667 2.33333L29.3334 14L17.6667 25.6667M2.66675 14H29.3334H2.66675Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button></a>
+
+  <article class="locations">
+
+    <div class="location">
+      <div class="loc-text">
+        <h2>Home studio</h2>
+        <h3><a href="https://goo.gl/maps/iR5eikGQkXx4eLW89" target="_blank">Abbeydore Rd, Portsmouth PO6 4AJ</a></h3>
+        <p>To maximize muscle recovery, I will advise you to drink plenty of water before and after your massage, as this aid’s hydration of your muscles and joints.  Drinking plenty of water helps with muscle soreness and tension.</p>
+        <p class="loc-link"></p>
       </div>
-    </div>
-  </article>
-
-  <article class="about-me">
-    <div class="about-me-img" alt="A picture of Stefanie Pitt"></div>
-    <div class="about-me-text">
-      <h2>About me</h2>
-      <p>I have a passion and love for Massage and find using professional techniques has great benefits that relieve short-term pain, improve blood flow, and ease stress related to pain caused either by sitting or exercising.</p>
-      <p>I am a Sports Massage Therapist gaining a Focus Awards Level 3 Diploma in Massage Therapy for Sports from Origym Centre of Excellence. I Promote muscular repair, healing, and mental well-being, utilising professional massage techniques to improve circulation, flexibility, relaxation, and clarity of mind.</p>
-      <p>I want to meet with you and give you a bespoke deep tissue massage reaching the connective tissues and muscles on a deeper level or a relaxing Swedish-style massage which has a gentler approach to relieve your stress and tension.</p>
-    </div>
-  </article>
-
-  <article class="testimonials">
-
-    <div class="testimonial">
-      <div class="profile-pic">
-        <div id="testimonial-0-img"></div>
-      </div>
-      <div class="testimonial-text" id="testimonial-0-text">
-      </div>
+      <div class="loc-pic" style="background-image: url('./assets/home_studio.jpg');"></div>
     </div>
 
-    <div class="testimonial">
-      <div class="profile-pic">
-        <div id="testimonial-1-img"></div>
+    <div class="location">
+      <div class="loc-text">
+        <h2>V - Lounge</h2>
+        <h3><a href="https://goo.gl/maps/Vxv9b9WX5QuAja6p9" target="_blank">68-70 West St, Portchester, Fareham PO16 9UN</a></h3>
+        <p>To maximize muscle recovery, I will advise you to drink plenty of water before and after your massage, as this aid’s hydration of your muscles and joints.  Drinking plenty of water helps with muscle soreness and tension.</p>
+        <p class="loc-link"></p>
       </div>
-      <div id="testimonial-1-text" class="testimonial-text">
-      </div>
+      <div class="loc-pic" style="background-image: url('./assets/vlounge.jpg');"></div>
     </div>
-  </article>
 
-  <article class="tip">
-    <div class="tip-text">
-      <h2>Tip of the Month</h2>
-      <div class="tip-topics">
-        <div class="tip-topic"><p>Diet</p></div>
-      </div>
-      <p>To maximize muscle recovery, I will advise you to drink plenty of water before and after your massage, as this aid’s hydration of your muscles and joints.  Drinking plenty of water helps with muscle soreness and tension.</p>
-      <p>Water also thins the blood and transports nutrients and oxygen through the body so the body can heal more efficiently, aiding a speedy recovery.</p>
-    </div>
-    <div class="tip-pic" style="background-image: url('./assets/water.jpg');"></div>
   </article>
 
   <article class="banner">
-    <h2>Need a Massage?</h2>
+    <h2>Ready to Book?</h2>
     <a href="./booking.html"><button class="CTAbutt">
       <p>Book Today</p>
       <svg fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.6667 2.33333L29.3334 14L17.6667 25.6667M2.66675 14H29.3334H2.66675Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button></a>
   </article>
+
+
 
   <footer>
     <div class="socials">
@@ -103,13 +76,11 @@
       <li><a href="./booking.html">Booking</a></li>
       <li>|</li>
       <li><a href="./locations.html">Locations</a></li>
-
+  
     </ul>
     <p class="footer-contact">Tel: <a href="tel:+0118999881999113725 3">0118999881999113725 3</a></p>
     <p class="footer-contact">Email: <a href="mailto:example@example.com">example@example.com</a></p>
     <p class="credit">Desinged by <a href="http://tyway.net">Tyway</a></p>
   </footer>
-
-  <script defer src="./lib/index.js"></script>
 </body>
 </html>
