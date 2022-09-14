@@ -7,6 +7,9 @@
   --timetable-gap: 0;
   --timetable-align-items: flex-start;
 
+  --call-banner-gap: 2rem;
+  --call-banner-h2-font-size: 3rem;
+
 
 }
 @media (max-width: 1200px) {
@@ -24,6 +27,9 @@
     --timetable-gap: 4rem;
     --timetable-align-items: center;
 
+    --call-banner-gap: 1rem;
+    --call-banner-h2-font-size: 2.5rem;
+    
   }
 }
 
@@ -115,4 +121,17 @@
 }
 .day>p{
   font-size: 1.4rem;
+}
+
+#call-banner {
+  flex-direction: column;
+  gap: var(--call-banner-gap);
+}
+#call-banner>h3 {
+  font-family: 'comfortaa', cursive;
+  font-size: var(--call-banner-h2-font-size);
+  word-break: break-all;
+}
+#call-banner>h3>a {
+  text-decoration: underline;
 }
