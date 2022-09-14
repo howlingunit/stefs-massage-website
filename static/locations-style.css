@@ -23,7 +23,7 @@
 @media (max-width: 800px) {
   :root {
     --location-padding: 5rem 0 5rem;
-    --location-gap: 1rem;
+    --location-gap: 0rem;
     --location-flex-direction: column;
     --loc-pic-width: 100%;
     --loc-pic-height: 20rem;
@@ -81,6 +81,10 @@
 .loc-text>h2 {
   font-size: var(--loc-text-h1-font-size);
   margin-bottom: 0.5rem;
+}
+.loc-text>h3 {
+  text-decoration: underline;
+  margin-bottom: 2rem;
 }
 .loc-text>p {
   font-size: var(--loc-text-p-font-size);
