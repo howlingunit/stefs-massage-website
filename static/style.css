@@ -38,7 +38,7 @@ body{
   --nav-align-items: baseline;
   --nav-items-font-size: 2.5rem;
   --nav-flex-direction: row;
-  --nav-width: 75%;
+  --nav-width: 90%;
   --nav-text-align: start;
   --nav-padding: 2.5rem 0 0 0;
 
@@ -59,13 +59,13 @@ body{
 
 @media (max-width: 1200px) {
   :root {
+    --nav-title-font-size: 4rem;
   }
 }
 
 @media (max-width: 800px) {
   :root {
 
-    --nav-title-font-size: 4rem;
     --nav-title-margin: 1rem 0 0 0;
     --nav-align-items: right;
     --nav-items-font-size: 1.5rem;
@@ -135,6 +135,7 @@ nav>h1 {
   flex-direction: row;
   justify-content: space-evenly;
   gap: 2rem;
+
 }
 
 .CTAbutt {
@@ -142,7 +143,7 @@ nav>h1 {
   width: var(--CTAbutt-width);
   height: var(--CTAbutt-height);
 
-  background-color: #6297BF;
+  background-color: #24a0ed;
   border: 0;
   border-radius: 1.5rem;
 
@@ -169,10 +170,10 @@ nav>h1 {
   font-size: 2rem;
 }
 .CTAbutt:hover {
-  background-color: #00c8f5;
+  background-color: #2884bd;
 }
 .CTAbutt:active {
-  background-color: #0085a3;
+  background-color: #266e9b;
 }
 .CTAbutt:hover > svg{
   transform: translate(1rem);
