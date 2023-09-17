@@ -8,6 +8,8 @@ CREATE TABLE testimonials(
 );
 
 INSERT INTO testimonials(id, name, testimonial, picture) VALUES 
+  (7, 'Ivory Willow', 'A very calming atmosphere and a lovely conversation, good technique and very relaxed, worked on knots in my shoulders which was very helpful and Im looking forward to seeing her again :)', 'ivory-willow.jpg'),
+  (6, 'Kes', 'What a fantastic time I had. It was very professional and thoroughly enjoyable. Great massage, felt very relaxed and at ease and afterwards my body felt great! 5 stars!', 'kes.jpg'),
   (5, 'Vanessa Richardson', 'Its been years since I had my last massage and meeting Stef in our local library was heaven sent. I had a full body massage and it was a terrific experience. Shes open to feedback, listens well and understands my needs. I feel comfortable and relaxed through it all. Shes professional yet very friendly. Try her out, youll never regret it 😊', 'vanessa-richardson.jpeg'),
   (4, 'Penny Arnold', 'Had another amazing full body massage from Stef as need regular maintenance for my osteoarthritis in my spine can completely relax & feel confident Im in good hands 🙌 thanku once again X', 'penny-arnold.jpeg'),
   (3, 'Penny Arnold', 'Well all I can say is Stef listens to her growing cliental as shes improved even more this was my 3rd visit . I have spondylitis in my whole spine so get continual back pain . Last time a mth ago she sorted my neck/ shoulder pain which hasnt returned . This time was maintenance on my lower spine really firm therapeutic massage can thoroughly recommend 👌 thanku 😊', 'penny-arnold.jpeg'),
